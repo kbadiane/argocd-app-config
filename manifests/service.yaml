@@ -12,3 +12,4 @@ spec:
     targetPort: 5000
   selector:
     app: flask-api-rest
+  type: NodePort
