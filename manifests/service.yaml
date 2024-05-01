@@ -8,9 +8,9 @@ metadata:
 spec:
   ports:
   - name: http
-    port: 5000
+    port: 8088
     protocol: TCP
-    targetPort: 8088
+    targetPort: 5000
   selector:
     app: flask-api-rest
   type: NodePort
