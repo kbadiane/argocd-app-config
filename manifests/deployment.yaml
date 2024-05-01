@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-api-rest
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: flask-api-rest
+  template:
+    metadata:
+      labels:
+        app: flask-api-rest
+    spec:
+      containers:
+      - image: khalibad/flask-api-rest:1.0.RELEASE
+        imagePullPolicy: IfNotPresent
+        name: flask-api-rest
+        ports:
+        - containerPort: 5000
+  replicas: 1
