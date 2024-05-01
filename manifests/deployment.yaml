@@ -18,4 +18,4 @@ spec:
         name: flask-api-rest
         ports:
         - containerPort: 5000
-  replicas: 1
+  replicas: 2
